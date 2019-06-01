@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joshua's Instructions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="effect">
+      <ul>
+        <li>
+          <a href="#main">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="main" id="main">
+      <h1 class="main-header">
+        Getting Started with SQL
+      </h1>
+      <p class="main-content">
+        SQL stands for Structured Query Language
+
+        <br />
+
+        With SQL we can store data in a table, similar to a spreadsheet with
+        rows and columns.
+        <br />
+        For Example:
+        <br />
+        CREATE TABLE exercise_logs <br />
+        (id INTEGER PRIMARY KEY AUTOINCREMENT, type TEXT, minutes INTEGER,
+        calories INTEGER, heart_rate INTEGER);<br /><br />
+        INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES
+        ("biking", 30, 100, 110);<br />
+        INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES
+        ("biking", 10, 30, 105);<br />
+        INSERT INTO exercise_logs(type, minutes, calories, heart_rate) VALUES
+        ("dancing", 15, 200, 120);<br />
+        SELECT * FROM exercise_logs;<br />
+        This table displays a graph pertinent to health and fitness and will
+        appear as the following:
+      </p>
+
+      <table class="sql-table">
+        <tr class="sql-header">
+          <th>id</th>
+          <th>type</th>
+          <th>minutes</th>
+          <th>calories</th>
+          <th>heart_rate</th>
+        </tr>
+        <tr class="sql-stats">
+          <th>1</th>
+          <th>biking</th>
+          <th>30</th>
+          <th>100</th>
+          <th>110</th>
+        </tr>
+        <tr class="sql-stats">
+          <th>2</th>
+          <th>rock-climbin</th>
+          <th>45</th>
+          <th>500</th>
+          <th>95</th>
+        </tr>
+        <tr class="sql-stats">
+          <th>3</th>
+          <th>dancing</th>
+          <th>20</th>
+          <th>200</th>
+          <th>120</th>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
